@@ -1,0 +1,50 @@
+{
+  "name": "Medals",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "MedalsHttp",
+      "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "HttpServerLocation"
+      },
+      "columnDelimiter": ",",
+      "escapeChar": "\\",
+      "firstRowAsHeader": true,
+      "quoteChar": "\""
+    },
+    "schema": [
+      {
+        "name": "Rank",
+        "type": "String"
+      },
+      {
+        "name": "TeamCountry",
+        "type": "String"
+      },
+      {
+        "name": "Gold",
+        "type": "String"
+      },
+      {
+        "name": "Silver",
+        "type": "String"
+      },
+      {
+        "name": "Bronze",
+        "type": "String"
+      },
+      {
+        "name": "Total",
+        "type": "String"
+      },
+      {
+        "name": "Rank by Total",
+        "type": "String"
+      }
+    ]
+  }
+}
