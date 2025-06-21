@@ -80,5 +80,3 @@ Azure Synapse Analytics (Lake Database & Analysis)
 - Shows best practices like **Parquet for intermediate storage** and **CSV for transformed outputs**.
 
 ---
-
-## 📁 Repository Structure (GitHub)
