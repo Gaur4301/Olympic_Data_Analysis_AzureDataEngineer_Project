@@ -1,8 +1,3 @@
-
-
-# %fs
-# ls "/mnt/tokyoolymicdata"
-
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as f
 spark=SparkSession.builder.appName('TokyoOlympic').getOrCreate()
