@@ -1,6 +1,6 @@
-secret_value = dbutils.secrets.get(scope="kv-integration-scope", key="dev-secret")
+# secret_value = dbutils.secrets.get(scope="kv-integration-scope", key="dev-secret")
 # print(secret_value)
-url=f"https://login.microsoftonline.com/{secret_value}/oauth2/token"
+# url=f"https://login.microsoftonline.com/{secret_value}/oauth2/token"
 
 configs = {"fs.azure.account.auth.type": "OAuth",
 "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
