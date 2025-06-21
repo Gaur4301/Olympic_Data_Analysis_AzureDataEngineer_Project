@@ -1,7 +1,3 @@
-olympic-azure-data-engineering-project
-
-olympic-azure-data-engineering-project
-
 # Olympic Data Analysis - Azure Data Engineering Project
 
 ## 📚 Project Overview
