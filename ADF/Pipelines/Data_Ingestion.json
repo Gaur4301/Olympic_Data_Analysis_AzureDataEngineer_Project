@@ -1,5 +1,5 @@
 {
-  "name": "Data-Ingestion",
+  "name": "Data_Ingestion",
   "properties": {
     "activities": [
       {
@@ -32,9 +32,7 @@
               "type": "AzureBlobStorageWriteSettings"
             },
             "formatSettings": {
-              "type": "DelimitedTextWriteSettings",
-              "quoteAllText": true,
-              "fileExtension": ".txt"
+              "type": "ParquetWriteSettings"
             }
           },
           "enableStaging": false,
@@ -96,7 +94,7 @@
             "referenceName": "ADLS",
             "type": "DatasetReference",
             "parameters": {
-              "FileName": "Athletes.csv"
+              "FileName": "Athletes.parquet"
             }
           }
         ]
@@ -135,9 +133,7 @@
               "type": "AzureBlobStorageWriteSettings"
             },
             "formatSettings": {
-              "type": "DelimitedTextWriteSettings",
-              "quoteAllText": true,
-              "fileExtension": ".txt"
+              "type": "ParquetWriteSettings"
             }
           },
           "enableStaging": false,
@@ -211,7 +207,7 @@
             "referenceName": "ADLS",
             "type": "DatasetReference",
             "parameters": {
-              "FileName": "Coaches.csv"
+              "FileName": "Coaches.parquet"
             }
           }
         ]
@@ -250,9 +246,7 @@
               "type": "AzureBlobStorageWriteSettings"
             },
             "formatSettings": {
-              "type": "DelimitedTextWriteSettings",
-              "quoteAllText": true,
-              "fileExtension": ".txt"
+              "type": "ParquetWriteSettings"
             }
           },
           "enableStaging": false,
@@ -326,7 +320,7 @@
             "referenceName": "ADLS",
             "type": "DatasetReference",
             "parameters": {
-              "FileName": "EntriesGender.csv"
+              "FileName": "EntriesGender.parquet"
             }
           }
         ]
@@ -365,9 +359,7 @@
               "type": "AzureBlobStorageWriteSettings"
             },
             "formatSettings": {
-              "type": "DelimitedTextWriteSettings",
-              "quoteAllText": true,
-              "fileExtension": ".txt"
+              "type": "ParquetWriteSettings"
             }
           },
           "enableStaging": false,
@@ -453,8 +445,7 @@
                   "physicalType": "String"
                 },
                 "sink": {
-                  "name": "Rank by Total",
-                  "type": "String",
+                  "name": "RankbyTotal",
                   "physicalType": "String"
                 }
               }
@@ -477,7 +468,7 @@
             "referenceName": "ADLS",
             "type": "DatasetReference",
             "parameters": {
-              "FileName": "Medals.csv"
+              "FileName": "Medals.parquet"
             }
           }
         ]
@@ -516,9 +507,7 @@
               "type": "AzureBlobStorageWriteSettings"
             },
             "formatSettings": {
-              "type": "DelimitedTextWriteSettings",
-              "quoteAllText": true,
-              "fileExtension": ".txt"
+              "type": "ParquetWriteSettings"
             }
           },
           "enableStaging": false,
@@ -534,7 +523,7 @@
                 "sink": {
                   "name": "TeamName",
                   "type": "String",
-                  "physicalType": "String"
+                  "physicalType": "UTF8"
                 }
               },
               {
@@ -546,7 +535,7 @@
                 "sink": {
                   "name": "Discipline",
                   "type": "String",
-                  "physicalType": "String"
+                  "physicalType": "UTF8"
                 }
               },
               {
@@ -558,7 +547,7 @@
                 "sink": {
                   "name": "Country",
                   "type": "String",
-                  "physicalType": "String"
+                  "physicalType": "UTF8"
                 }
               },
               {
@@ -570,7 +559,7 @@
                 "sink": {
                   "name": "Event",
                   "type": "String",
-                  "physicalType": "String"
+                  "physicalType": "UTF8"
                 }
               }
             ],
@@ -592,12 +581,14 @@
             "referenceName": "ADLS",
             "type": "DatasetReference",
             "parameters": {
-              "FileName": "Teams.csv"
+              "FileName": "Teams.parquet"
             }
           }
         ]
       }
     ],
-    "annotations": []
-  }
+    "annotations": [],
+    "lastPublishTime": "2025-06-17T17:52:40Z"
+  },
+  "type": "Microsoft.DataFactory/factories/pipelines"
 }

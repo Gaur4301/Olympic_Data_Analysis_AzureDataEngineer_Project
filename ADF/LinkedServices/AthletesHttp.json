@@ -1,0 +1,13 @@
+{
+  "name": "AthletesHttp",
+  "type": "Microsoft.DataFactory/factories/linkedservices",
+  "properties": {
+    "annotations": [],
+    "type": "HttpServer",
+    "typeProperties": {
+      "url": "https://github.com/Gaur4301/Olympic_Data_Analysis_AzureDataEngineer_Project/raw/refs/heads/main/data/Athletes.csv",
+      "enableServerCertificateValidation": true,
+      "authenticationType": "Anonymous"
+    }
+  }
+}

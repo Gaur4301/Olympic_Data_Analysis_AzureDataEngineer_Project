@@ -11,7 +11,7 @@
       }
     },
     "annotations": [],
-    "type": "DelimitedText",
+    "type": "Parquet",
     "typeProperties": {
       "location": {
         "type": "AzureBlobStorageLocation",
@@ -21,11 +21,9 @@
         },
         "container": "raw-data"
       },
-      "columnDelimiter": ",",
-      "escapeChar": "\\",
-      "firstRowAsHeader": true,
-      "quoteChar": "\""
+      "compressionCodec": "snappy"
     },
     "schema": []
-  }
+  },
+  "type": "Microsoft.DataFactory/factories/datasets"
 }
